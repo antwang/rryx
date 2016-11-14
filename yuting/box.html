@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>毓婷密室逃脱</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta name="description" content="我开启了神秘的“迷失”逃脱之旅，不同的异次元在前方展开，难道你不想去探索那未知的国度么，快来加入吧。。。">
+<!--社交网站抓取-->
+<meta property="og:title" content="毓婷密室逃脱" />
+<meta property="og:type" content="book" />
+<meta property="og:url" content="http://yuting2014.renren.com/m" />
+<meta property="og:image" content="http://yx.xnimg.cn/M03/56/42/42/f6fuYbzaamQvVZnaIryYraei.ori.jpg" />
+<meta property="og:site_name" content="人人网"/>
+<meta property="og:description" content="我开启了神秘的“迷失”逃脱之旅，不同的异次元在前方展开，难道你不想去探索那未知的国度么，快来加入吧。。。"/>
+<meta name="format-detection" content="telephone=no">
+<!--隐藏状态栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<link href="http://yx.xnimg.cn/minisite/common/style/m_reset.css" rel="stylesheet" type="text/css">
+<link href="http://yx.xnimg.cn/minisite/common/style/base.css" rel="stylesheet" type="text/css">
+<link href="css/fontIcon.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/fx.js"></script>
+<script type="text/javascript">
+    Zepto(function(){
+        Zepto('#bx').on('click',function(){
+            Zepto.post('../user/isLogin',{_rtk: __RRXN.get_check_x},function(data){
+                if(data==1){
+                    location.href="scene.html";
+                }else{
+                    window.location = "http://mt.renren.com/login?redirect="+document.URL;
+                }
+            },'json')
+        })
+    })
+</script>
+</head>
+<body class=""> 
+    <!--背景图片-->
+    <div class="scene scene9"><img class="bgimg" src="images/bgs/bg9.jpg"></div>
+    <a id="bx" class="animation shake bx" href="javascript:;"><img id="boximg" class="bgimg" src="images/pics/bx2.png"></a>
+    <img id="box-tips" class="animation fadeInUp" src="images/texts/t3.png">
+  #parse("/template/comm.html")
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>毓婷密室逃脱</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta name="description" content="我开启了神秘的“迷失”逃脱之旅，不同的异次元在前方展开，难道你不想去探索那未知的国度么，快来加入吧。。。">
+<!--社交网站抓取-->
+<meta property="og:title" content="毓婷密室逃脱" />
+<meta property="og:type" content="book" />
+<meta property="og:url" content="http://yuting2014.renren.com/m" />
+<meta property="og:image" content="http://yx.xnimg.cn/M03/56/42/42/f6fuYbzaamQvVZnaIryYraei.ori.jpg" />
+<meta property="og:site_name" content="人人网"/>
+<meta property="og:description" content="我开启了神秘的“迷失”逃脱之旅，不同的异次元在前方展开，难道你不想去探索那未知的国度么，快来加入吧。。。"/>
+<meta name="format-detection" content="telephone=no">
+<!--隐藏状态栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<link href="http://yx.xnimg.cn/minisite/common/style/m_reset.css" rel="stylesheet" type="text/css">
+<link href="http://yx.xnimg.cn/minisite/common/style/base.css" rel="stylesheet" type="text/css">
+<link href="css/fontIcon.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/friends.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/fx.js"></script>
+<script type="text/javascript" src="js/easeljs-0.7.1.min.js"></script>
+<script type="text/javascript" src="js/preloadjs-0.4.1.min.js"></script>
+<script type="text/javascript" src="js/maze.js"></script>
+<script type="text/javascript" src="js/disc.js"></script>
+<script type="text/javascript" src="js/album.js"></script>
+<script type="text/javascript" src="js/pin.js"></script>
+<script type="text/javascript" src="js/hai.js"></script>
+<script type="text/javascript" src="js/countDown.js"></script>
+<script type="text/javascript" src="js/Friends.js"></script>
+<!--script>
+    if(!document.referrer){
+        location.href="index.html";
+    }
+</script-->
+</head>
+<body class="animation fadeIn"> 
+    <!--主场景-->
+    <div id="sec0" class="scene"><img class="bgimg animation fadeIn" src="images/bgs/bg10.jpg"></div>
+    <!--用户头像-->
+    <div class="user">
+        <p class="user-pic"><img id="userpic" class="bgimg" src="http://yx.xnimg.cn/M03/56/63/63/2QnmAn7NBfE3uuQVverYjqAv.ori.jpg"></p>
+        <!--p class="user-name" id="username">毓婷</p-->
+    </div>
+    <!--倒计时-->
+    <div class="counter"><p id="time" class="timer">倒计时：72</p></div>
+    <!--左侧道具列表-->
+    <div id="djlist" class="djlist-box">
+        <ul>
+            <li><img id="dj1" src="images/pics/dj1.png"></li>
+            <li><img id="dj2" src="images/pics/dj2.png"></li>
+            <li><img id="dj3" src="images/pics/dj3.png"></li>
+            <li><img id="dj4" src="images/pics/dj4.png"></li>
+            <li><img id="dj5" src="images/pics/dj5.png"></li>
+        </ul>
+    </div>
+    <!--道具木板弹窗-->
+    <div id="djmb" class="djmb-box">
+        <h1>成功开启宝箱才能获得钥匙，开启宝箱需集齐5种元素中的任意3种。</h1>
+        <ul>
+            <li><img src="images/pics/x1.png"></li>
+            <li><img src="images/pics/x2.png"></li>
+            <li><img src="images/pics/x3.png"></li>
+            <li><img src="images/pics/x4.png"></li>
+            <li><img src="images/pics/x5.png"></li>
+        </ul>
+        <a id="btnCfm1" class="btn-cfm-mb" href="javascript:;">确定</a>
+    </div>
+    <!--游戏选择场景弹窗-->
+    <div id="sec1" class="scene gamebg sec1" >
+        <div class="a-box clearfix">
+            <a class="a1 pr" href="javascript:;"><img class="bgimg" src="images/pics/a1.jpg"><img class="mask" src="images/pics/mask.png"></a>
+            <a class="a2 pr" href="javascript:;"><img class="bgimg" src="images/pics/a2.jpg"><img class="mask" src="images/pics/mask.png"></a>
+            <a class="a3 pr" href="javascript:;"><img class="bgimg" src="images/pics/a3.jpg"><img class="mask" src="images/pics/mask.png"></a>
+            <a class="a4 pr" href="javascript:;"><img class="bgimg" src="images/pics/a4.jpg"><img class="mask" src="images/pics/mask.png"></a>
+        </div>
+        <div class="a-tips"><p>成功收集任意<em>3个房间的解密物品</em>即<em>获得钥匙</em>，成功逃出困境</p></div>
+        <a class="a5 pr" href="javascript:;"><img class="bgimg" src="images/pics/a5.jpg"><img class="mask" src="images/pics/mask.png"></a>
+    </div>
+    <!--场景1药瓶-->
+    <div id="sec2" class="scene gamebg sec2" >
+        <a id="btn1" class="btn-yp" href="javascript:;"></a>
+    </div>
+    <!--游戏1药片过迷宫-->
+    <div id="game1" class="pop-game" >
+        <p class="game-spec spec1 font1 tc">这个药片怎能么藏在这里？<br>不管怎样，先按照路径把它拿出来吧</p>
+        <canvas id="maze"></canvas>
+        <div class="help-box font1">
+            <a id="help1" class="btn-help" href="javascript:;">向闺蜜求救</a>
+            <p class="btn-spec">@一位好友即可马上获得药丸</p>
+        </div>
+    </div>
+    <!--游戏1药片通过弹窗-->
+    <div id="pop1" class="pop">
+        <a id="close1" class="btn-close font1 btn-dj-1" href="javascript:;">x</a>
+        <div class="pop-con">
+            <p class="pop-con-pic tc"><img class="pic1" src="images/pics/j1.png"></p>
+            <p class="pop-con-msg font1 tc">成功获得药片</p>
+            <a id="btn-close-1" class="btn-cfm-mb1 btn-dj-1" href="javascript:;">确定</a>
+        </div>
+    </div>
+
+    <!--场景光盘-->
+    <div id="sec3" class="scene gamebg sec3" >
+        <a id="btn2" class="btn-cp" href="javascript:;"></a>
+    </div>
+    <!--游戏插排-->
+    <div id="game2" class="pop-game" >
+        <p class="game-spec spec1 font1 tc">电线纵横交错，<br>得把插头插入对应的插孔才能接通电源。</p>
+        <canvas id="discGame"></canvas>
+        <div class="help-box font1">
+            <a id="help2" class="btn-help" href="javascript:;">向闺蜜求救</a>
+            <p class="btn-spec">@一位好友即可马上获得光盘</p>
+        </div>
+    </div>
+    <!--播放视频弹窗-->
+    <div id="pop-video" class="pop1">
+        <video id="video" src="" autoplay>您的浏览器不支持 video 标签。</video>
+    </div>
+    <!--游戏光盘通过弹窗-->
+    <div id="pop2" class="pop">
+        <a id="close2" class="btn-close font1 btn-dj-2" href="javascript:;">x</a>
+        <div class="pop-con">
+            <p class="pop-con-pic tc"><img class="pic2" src="images/pics/j2.png"></p>
+            <p class="pop-con-msg font1 tc">成功获得光盘</p>
+            <a id="btn-close-2" class="btn-cfm-mb1 btn-dj-2" href="javascript:;">确定</a>
+        </div>
+    </div>
+    <!--说明书房间-->
+    <div id="sec4" class="scene gamebg sec4" >
+        <a id="btn3" class="btn-sms" href="javascript:;"><!--img class="bgimg" src="images/pics/yp.jpg"--></a>
+    </div>
+    <!--说明书游戏界面-->
+    <div id="game3" class="pop-game" >
+        <p class="game-spec spec1 font1 tc">这个相框上布满了灰尘，好像掩盖了什么信息。<br>得把灰尘擦干净才行。</p>
+        <canvas id="drawGame"></canvas>
+        <div class="help-box font1">
+            <a id="help3" class="btn-help" href="javascript:;">向闺蜜求救</a>
+            <p class="btn-spec">@一位好友即可马上获得说明书</p>
+        </div>
+    </div>
+    <!--大说明书展示框-->
+    <div id="pop-spec" class="pop3"><img class="bgimg" src="images/pics/spec1.png"></div>
+    <!--获得说明书-->
+    <div id="pop3" class="pop">
+        <a id="close3" class="btn-close font1 btn-dj-3" href="javascript:;">x</a>
+        <div class="pop-con">
+            <p class="pop-con-pic tc"><img class="pic3" src="images/pics/j3.png"></p>
+            <p class="pop-con-msg font1 tc">成功获得说明书</p>
+            <a id="btn-close-3" class="btn-cfm-mb1 btn-dj-3" href="javascript:;">确定</a>
+        </div>
+    </div>
+    <!--拼图房间-->
+    <div id="sec5" class="scene gamebg sec5" >
+        <a id="btn4" class="btn-zt" href="javascript:;"></a>
+    </div>
+    <!--拼图游戏界面-->
+    <div id="game4" class="pop-game" >
+        <p class="game-spec spec5 font1 tc">好多废纸团，上面好像有什么图案，<br>拼出来看看是什么。</p>
+        <canvas id="ptGame"></canvas>
+        <div class="help-box font1">
+            <a id="help4" class="btn-help" href="javascript:;">向闺蜜求救</a>
+            <p class="btn-spec">@一位好友即可马上获得药盒</p>
+        </div>
+    </div>
+    <!--获得药盒-->
+    <div id="pop4" class="pop">
+        <a id="close4" class="btn-close font1 btn-dj-4" href="javascript:;">x</a>
+        <div class="pop-con">
+            <p class="pop-con-pic tc"><img class="pic4" src="images/pics/j4.png"></p>
+            <p class="pop-con-msg font1 tc">成功获得药盒</p>
+            <a id="btn-close-4" class="btn-cfm-mb1 btn-dj-4" href="javascript:;">确定</a>
+        </div>
+    </div>
+    <!--找茬房间-->
+    <div id="sec6" class="scene gamebg sec5" >
+        <a id="btn5" class="btn-yg" href="javascript:;"></a>
+    </div>
+    <!--找茬游戏界面-->
+    <div id="game5" class="pop-game" >
+        <p class="game-spec spec6 font1 tc">咦？！有两张海报，看起来似乎一模一样，<br>总觉得哪儿有点不对劲，是哪儿不一样呢？</p>
+        <canvas id="hbGame"></canvas>
+        <div class="help-box font1">
+            <a id="help5" class="btn-help" href="javascript:;">向闺蜜求救</a>
+            <p class="btn-spec">@一位好友即可马上获得海报</p>
+        </div>
+    </div>
+    <!--获得海报-->
+    <div id="pop5" class="pop">
+        <a id="close5" class="btn-close font1 btn-dj-5" href="javascript:;">x</a>
+        <div class="pop-con">
+            <p class="pop-con-pic tc"><img class="pic5" src="images/pics/j5.png"></p>
+            <p class="pop-con-msg font1 tc">成功获得海报</p>
+            <a id="btn-close-5" class="btn-cfm-mb1 btn-dj-5" href="javascript:;">确定</a>
+        </div>
+    </div>
+    <!--成功开启宝箱提示-->
+    <div id="pop-openbox" class="pop-box">
+        <div class="pop-con-box">
+            <p class="font1 pop-box-tips">你已经成功开启宝箱，获得摆脱困境的钥匙，是否现在使用？</p>
+            <ul class="checklist">
+                <li class="font1 checked" data-chk="1">是，立即使用，摆脱困境</li>
+                <li class="font1" data-chk="0">否，我要继续发现其他解密物品</li>
+            </ul>
+            <a class="font1 btn-cfm-box" href="javascript:;">确 定</a>
+        </div>
+    </div>
+    <!--完成任务提示-->
+    <!--div id="pop-task" class="pop-task">
+        <div class="font1 pop-con-task tc">
+            <p class="pop-task-tips">任务获取成功</p>
+            <p class="pop-task-tips1">找到钥匙，逃出困境！</p>
+            <a class="font1 btn-cfm-task" href="javascript:;">确 定</a>
+        </div>
+    </div-->
+    <!--时间到弹窗-->
+    <div id="pop-timeout" class="pop-timeout">
+        <a class="btn-close btn-close-time font1 btn-color" href="javascript:;">x</a>
+        <p class="timeout-tips">时间已用尽，逃生失败。</p>
+        <div class="btn-tools1">
+            <a class="font1 btn-replay" href="index.html">重新闯关</a>
+            <a class="font1 btn-share" href="javascript:;">分享</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main1.js"></script>
+  #parse("/template/comm.html")
+</body>
+</html>
