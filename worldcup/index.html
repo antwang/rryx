@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>华为手机世界杯季后赛-敢梦想 动无限</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta name="description" content="">
+<!--社交网站抓取-->
+<meta property="og:title" content="华为手机世界杯季后赛-敢梦想 动无限" />
+<meta property="og:type" content="book" />
+<meta property="og:url" content="http://huawei.renren.com" />
+<meta property="og:image" content="http://yx.xnimg.cn/M01/88/37/37/AR7R7rVbA7FbAFF7bejMf6Z3.ori.jpg" />
+<meta property="og:site_name" content="人人网"/>
+<meta property="og:description" content="华为世界杯季后赛为你再燃战火！组建你的球队，参与华为智能手机高校五人制足球赛！"/>
+<!--隐藏状态栏-->
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<link href="http://yx.xnimg.cn/minisite/common/style/m_reset.css" rel="stylesheet" type="text/css">
+<link href="http://yx.xnimg.cn/minisite/common/style/base.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/createjs-2013.12.12.min.js"></script>
+<script type="text/javascript">
+    Zepto(function(){
+            Zepto('#btn-shot').on('click',function(){
+                Zepto.post('/user/isLogin',{_rtk: __RRXN.get_check_x},function(data){
+                    if(data==1){
+                        location.href="shot.html";
+                    }else{
+                        window.location = "http://mt.renren.com/login?redirect="+document.URL;
+                    }
+                },'json')
+            })
+            Zepto('#btn-juggle').on('click',function(){
+                Zepto.post('/user/isLogin',{_rtk: __RRXN.get_check_x},function(data){
+                    if(data==1){
+                        location.href="juggle.html";
+                    }else{
+                        window.location = "http://mt.renren.com/login?redirect="+document.URL;
+                    }
+                },'json')
+            })
+    })
+</script>
+</head>
+<body> 
+    <header class="ad"><img src="images/banner.gif"></header>
+    <div class="main">
+        <img class="slogan" src="images/text3.png">
+        <div class="btn-box">
+            <a id="btn-shot" href="javascript:;">计时射门</a>
+            <a id="btn-juggle" href="javascript:;">计时颠球</a>
+        </div>
+        <p class="tips">动动手机练练球，先为你自己赢取积分，<br>为你未来的球队多一份挑战的资本！</p>
+        <div class="bottomtools">
+            <a class="huaweiMall" href="http://track.yx.renren.com/redirect/13357" target="_blank">花粉俱乐部</a>
+            <a class="wuren" href="rules.html">五人制足球赛</a>
+        </div>
+    </div>
+  #parse("/template/comm.html")
+</body>
+</html>

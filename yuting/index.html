@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
 <title>毓婷密室逃脱</title>
@@ -24,36 +24,15 @@
 <link href="css/friends.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/zepto.min.js"></script>
 <script type="text/javascript" src="js/preloadjs-0.4.1.min.js"></script>
-<script type="text/javascript">
-    Zepto(function(){
-       /* Zepto.post('../user/count',{_rtk: __RRXN.get_check_x},function(data){
-            Zepto('#countnum').html(data);
-        },'json')*/
- 	Zepto('#countnum').html(100);
-        Zepto('.btn-explore').click(function(){
-	location.href="transition2.html";
-            /*Zepto.post('../user/isLogin',{_rtk: __RRXN.get_check_x},function(data){
-                if(data==1){
-                Zepto.post('/feed/post',{_rtk: __RRXN.get_check_x,isfans:0},function(data){
-                    location.href="transition2.html";
-                })
-                }else{
-                    window.location = "http://mt.renren.com/login?redirect="+document.URL;
-                }
-            },'json')*/
-        })
-    })
-</script>
 </head>
 <body class="animation fadeIn"> 
     <!--背景图片-->
     <div class="scene scene0">
         <div class="animation fadeInLeft ytlogo"><img class="" src="images/pics/ytlogo.png"></div>
         <div class="animation fadeInUp title1"><img class="bgimg" src="images/texts/t1.png"></div>
-        <a class="animation fadeInUp btn-explore" href="javascript:;">开始探险</a>
+        <a class="animation fadeInUp btn-explore" href="transition2.html">开始探险</a>
         <img class="animation fadeInLeft qr" src="images/pics/qr.png">
-        <p id="join">已有<em id="countnum"></em>人摆脱困境</p>
+        <p id="join">已有<em id="countnum">100</em>人摆脱困境</p>
     </div>
-  #parse("/template/comm.html")
 </body>
 </html>

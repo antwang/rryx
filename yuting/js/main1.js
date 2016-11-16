@@ -20,13 +20,8 @@
         showPop('#djmb');
         //点击确定跳转至游戏房间选择页面
         $('#btnCfm1').on('click',function(){
-            Zepto.post('../user/isLogin',{_rtk: __RRXN.get_check_x},function(data){
-                if(data==1){
-                    showDaoju();
-                }else{
-                    window.location = "http://mt.renren.com/login?redirect="+document.URL;
-                }
-            },'json')
+            showDaoju();
+    
         })
         //时间到点关闭重新闯关
         $('.btn-close-time').on('click',function(){
@@ -34,9 +29,10 @@
         })
         //分享给好友
         $('.btn-share').on('click',function(){
+             share();
             Zepto.post('../user/isLogin',{_rtk: __RRXN.get_check_x},function(data){
                 if(data==1){
-                    share();
+                   
                 }else{
                     window.location = "http://mt.renren.com/login?redirect="+document.URL;
                 }

@@ -1,0 +1,346 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>华为麦芒C199手机-青春 锋芒绽放</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<!--社交网站抓取-->
+<meta name="description" content="">
+<meta property="og:title" content="华为麦芒C199手机-青春 锋芒绽放" />
+<meta property="og:type" content="book"/>
+<meta property="og:url" content="http://huaweimaimang.renren.com"/>
+<meta property="og:image" content="http://huaweimaimang.renren.com/share.jpg" />
+<meta property="og:site_name" content="人人网"/>
+<meta property="og:description" content="#华为麦芒C199手机#青春是一种刺，穿过冷眼，挣脱迷茫！磨砺锋芒，生命绽放！"/>
+<!--社交网站抓取end-->
+<meta name="format-detection" content="telephone=no">
+<!--隐藏状态栏-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<link href="http://yx.xnimg.cn/minisite/common/style/m_reset.css" rel="stylesheet" type="text/css">
+<link href="http://yx.xnimg.cn/minisite/common/style/base.css" rel="stylesheet" type="text/css">
+<link href="css/zepto.m.yx.lib.css" rel="stylesheet" type="text/css">
+<link href="css/fontIcon.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="css/jquery.yx.mobile.css" />
+<script type="text/javascript" src="http://yx.xnimg.cn/minisite/common/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/zepto.m.yx.lib.js"></script>
+<script type="text/javascript" src="js/createjs-2013.12.12.min.js"></script>
+<script src="js/TouchSlide.1.1.js"></script>
+<script type="text/javascript" src="js/fx.js"></script>
+<script type="text/javascript" src="js/tween.js"></script>
+<script type="text/javascript" src="js/Menu.js"></script>
+<script type="text/javascript" src="http://yx.xnimg.cn/minisite/common/js/jquery.yx.popup.js"></script>
+<script type="text/javascript" src="../js/share.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/uploadPic.js"></script>
+<script type="text/javascript" src="js/weixin.js"></script>
+<style>
+    body{
+        height:59rem;
+    }
+</style>
+</head>
+<body> 
+    <a id="menu" class="menu" href="javascript:">菜单</a>
+    <img class="hw_logo" alt="华为logo" src="images/pics/logo.png">
+    <img class="mm_logo" alt="麦芒logo" src="images/pics/logo2.png">
+    <!--隐藏式导航-->
+    <div class="menu-bar" id="sideBar">
+        <nav class="nav-list">
+            <a id="n1" class="n1 mn" href="index.html">首页</a>
+            <a id="n2" class="n2 mn" href="javascript:">活动介绍</a>
+            <a id="n3" class="n3 mn" href="upload.html">秀出锋芒</a>
+            <a id="n4" class="n4 mn" href="javascript:">锋芒展示</a>
+            <a id="n5" class="n5 mn" href="javascript:;">分享活动</a>
+            <a id="n6" class="n6 mn" href="javascript:;">华为商城</a>
+            <a id="n7" class="n7 mn" href="video.html">精彩广告</a>
+            <a id="n8" class="n8 mn" href="javascript:;">返回</a>
+        </nav>
+    </div>
+    <!--作品列表-->
+    <div class="upload_box">
+        <section class="step step1">
+            <div class="step_tips">
+                <p><br>这个模板最适合你的锋芒:</p>
+            </div>
+            <div class="step_con pr">
+                <input id="dec" type="hidden">
+                <!-- 本例主要代码 Start ================================ -->
+                <div id="slideBox1" class="slideBox">
+                    <div class="bd">
+                        <ul class="ul_wk">
+                            <li dec="d1" class="">
+                                <div class="imgBox hide">
+                                    <img src="images/modal/f1.jpg" class="figure figure1">
+                                    <img src="images/modal/d1.png" class="dec dec1">
+                                    <img src="images/modal/s1.jpg" class="signature signature1">
+                                </div>
+                            </li>
+                            <li dec="d2" class="">
+                                <div class="imgBox hide">
+                                    <img src="images/modal/f2.jpg" class="figure figure2">
+                                    <img src="images/modal/d2.png" class="dec dec2">
+                                    <img src="images/modal/s2.jpg" class="signature signature2">
+                                </div>
+                            </li>
+                            <li dec="d3" class="">
+                                <div class="imgBox hide">
+                                    <img src="images/modal/f3.jpg" class="figure figure3">
+                                    <img src="images/modal/d3.png" class="dec dec3">
+                                    <img src="images/modal/s3.jpg" class="signature signature3">
+                                </div>
+                            </li>
+                            <li dec="d4" class="">
+                                <div class="imgBox hide">
+                                    <img src="images/modal/f4.jpg" class="figure figure4">
+                                    <img src="images/modal/d4.png" class="dec dec4">
+                                    <img src="images/modal/s4.jpg" class="signature signature4">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var userName = '',userPic = '',userId = 0;
+                    var randomIndex = 0;
+                    jQuery(function(){
+                        getUser();
+                    })
+                    function getUser(){
+                        Zepto.post('/user/isLogin',function(flag){
+                            if(flag==1){
+	                            Zepto.proxyAjax({
+		                            url: 'http://base.yx.renren.com/api/http/user/login-user?format=2&callback=?',
+		                            dataType: "json",
+		                            type: "GET",
+		                            success: function(data){
+                                        if(data.status>0){
+                                            var user = data.user;
+                                            userId = user.userId;
+                                            randomIndex = userId%4;
+				                            TouchSlide({ 
+					                            slideCell:"#slideBox1",
+					                            mainCell:".bd ul", 
+					                            effect:"leftLoop", 
+                                                defaultIndex:randomIndex,
+                                                prevCell:".btn-left",
+                                                nextCell:".btn-right",
+					                            autoPage:false,//自动分页
+					                            autoPlay:false, //自动播放
+                                                startFun:function(i,c){
+                                                jQuery('.ul_wk li').find('.imgBox').addClass('hide'); 
+                                                jQuery('.ul_wk li').eq(i+1).find('.imgBox').removeClass('hide'); 
+                                                jQuery('#dec').val(jQuery('.ul_wk li').eq(i+1).attr('dec')); 
+                                                }, // 每次切换效果开始时执行函数，用于处理特殊情况或创建更多效果。用法 satrtFun:function(i,c){ }； 其中i为当前分页，c为总页数
+                                                endFun:function(i,c){
+                                                } // 每次切换效果结束时执行函数，用于处理特殊情况或创建更多效果。用法 endFun:function(i,c){ }； 其中i为当前分页，c为总页数
+				                            });
+                                        }
+		                            }
+	                            });
+                            }else{
+                                //Zepto.yx.login();
+                                window.location = "http://mt.renren.com/login?redirect="+document.URL;
+                            }
+                        });
+                    }
+		        </script> 
+                <img class="step_phone" src="images/pics/phone.png">
+                <img class="step_sl" src="images/texts/sl0.png">
+            </div>
+            <div class="slider_tips1">
+                <div class="slider_tips_arrow1 slider_tips_arrow_l"><img class="arrow_pic1" src="images/pics/arrow2.png"></div>
+                <div class="slider_tips_text1"><p>左右滑动更换模板</p></div>
+                <div class="slider_tips_arrow1 slider_tips_arrow_r"><img class="arrow_pic1" src="images/pics/arrow3.png"></div>
+            </div>
+            <div class="tools1 tc mt1r">
+                <a id="btn_next1" class="btn_next" href="javascript:;">下一步</a>
+            </div>
+        </section>
+        <section class="step step2" style="display:none">
+            <div class="step_tips">
+                <p><br>上传你的照片！</p>
+            </div>
+            <div class="step_con pr">
+                <input type="hidden" name="picUrl" id="picUrl">
+                <input type="hidden" name="picType" id="picType">
+                <div class="upload_manner">
+                    <div class="btn_file btn_style2 pointer pr"> 本地上传
+                        <form id="picForm" method="post" action="/work/pic/local" enctype="multipart/form-data" target="hiddenIframe">
+                            <input class="fileinput" type="file" id="picData" name="picData">
+                        </form>
+                        <iframe name="hiddenIframe" frameborder="0" border="0" style="display:none;width:0px;height:0px;"></iframe>
+                    </div>
+                    <a class="btn_album btn_style2" href="javascript:" id="ablumpic">人人相册调取</a>
+                </div>
+                <img class="step_phone" src="images/pics/phone.png">
+                <img class="step_sl" src="images/texts/sl0.png">
+            </div>
+        </section>
+        <!--编辑图片-->
+        <section class="step step3" style="display:none">
+            <div class="step_tips">
+                <div id="canvas_tit"><br>拖动照片可以调整照片位置！</div>
+            </div>
+            <div class="step_con pr">
+                <div id="loadCanvas" class="canvas_box">
+                </div>
+            </div>
+            <div id="btntools1" class="btntools1 tc mt1r">
+                <div id="btnStep2">
+                    <a id="btn_prev2" href="javascript:">更换图片</a>
+                    <a id="btn_next2" href="javascript:;">下一步</a>
+                </div>
+                <div id="btnStep3" style="display:none;">
+                    <a id="btn_prev3" href="javascript:">上一步</a>
+                    <a id="btn_next3" href="javascript:;">下一步</a>
+                </div>
+                <div id="btnStep4" style="display:none;">
+                    <div class="checkboxs"><p><input id="addFans" type="checkbox" checked>添加华为品牌为好友</p><p><input id="syn" type="checkbox" checked>同步作品到人人相册</p></div>
+                    <p><a id="btn_next4" href="javascript:;">提交作品</a></p>
+                </div>
+                <div id="btnStep5" style="display:none;">
+                    <div class="haoyou_box">
+                        <p class="haoyou_tips">邀请好友一起展露锋芒！</p>
+                        <ul id="loadFriends" class="ul_haoyou">
+                            <p class="tc"><img style="width:1.75rem;height:1.75rem;vertical-align:middle;" src="images/load.gif">好友加载中…</p>
+                        </ul>
+                    </div>
+                    <p class="yaoqing_btns">
+                        <a id="btn_change" href="javascript:">更换好友</a>
+                        <a id="btn_invite" href="javascript:;">发送邀请</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--邀请好友-->
+    <div id="p1" class="rrPopup rrp1">
+        <a class="rClose" href="javascript:">关闭</a>
+        <div class="pop-con tc">
+            <p class="bold"><span class="txt1">您的邀请已经发布成功，<br>感谢您的参与！</span><br>分享活动到人人网，让好友们给你投票吧！</p>
+            <div class="btntools1 tc mt1r">
+                <a class="btn_mywork" href="javascript:">查看我的作品</a>
+                <a class="btn_shareAct" href="javascript:;">分享活动</a>
+            </div>
+        </div>
+    </div>
+    <!--投票提示-->
+    <div id="p2" class="rrPopup rrp1">
+        <a class="rClose" href="javascript:">关闭</a>
+        <div class="pop-con tc">
+            <p class="bold"><span class="txt1">感谢您的支持！</span><br>您每天可以给同一作品投票5次，<br>快继续支持大家的作品吧！</p>
+            <div class="btntools1 tc mt1r">
+                <a class="btn_fm" href="javascript:">我也来展现锋芒</a>
+                <a class="btn_moreWork" href="javascript:;">继续投票</a>
+            </div>
+        </div>
+    </div>
+    <!--投票达上限提示-->
+    <div id="p3" class="rrPopup rrp1">
+        <a class="rClose" href="javascript:">关闭</a>
+        <div class="pop-con tc">
+            <p class="bold desert ft14 pt1r">您对该作品的投票已经达到上限！<br>请继续支持其他的作品吧！</p>
+            <div class="btntools1 tc mt1r">
+                <a class="btn_fm" href="javascript:">我也来展现锋芒</a>
+                <a class="btn_moreWork" href="javascript:;">继续投票</a>
+            </div>
+        </div>
+    </div>
+    <!--分享到第三方弹窗-->
+    <div class="rrPopup rrp1" id="p4">
+        <a class="rClose" href="javascript:">关闭</a>
+        <div class="pop-con tc">
+            <p class="bold ft14">请选择您要分享的平台：</p>
+            <ul class="share-list">
+                <li class="btn-share-renren pointer" onclick="shareTorenren()">分享到人人</li>
+                <li class="btn-share-tsina pointer" onclick="shareTotsina()">分享到新浪微博</li>
+                <li class="btn-share-tqq pointer" onclick="shareTotqq()">分享到腾讯微博</li>
+                <li class="btn-share-kaixin pointer" onclick="shareTokaixin()">分享到开心网</li>
+                <li class="btn-share-qzone pointer" onclick="shareToqzone()">分享到qq空间</li>
+            </ul>
+        </div>
+    </div>
+    <!--活动介绍弹窗-->
+    <div class="rrPopup" id="p6">
+        <a class="rClose" href="javascript:">关闭</a>
+        <div class="rules-box">
+            <div class="rules-item">
+                <p>青春，是一种刺。穿过冷眼、刺破质疑，挣脱迷茫。<br>信仰就是方向！磨砺锋芒，生命绽放，无畏生长！<br>华为麦芒C199手机</p>
+            </div>
+            <div class="rules-item">
+                <h2 class="tit2">【活动简介】</h2>
+                <p>登录人人网华为麦芒C199手机“青春 锋芒绽放”活动页面（网页或手机端），选择模板上传你的照片，生成属于你的麦芒海报；分享给好友进行投票，有机会赢取华为麦芒C199手机大奖！</p>
+            </div>
+            <div class="rules-item">
+                <div class="item1">
+                    <h3>活动参与资格及活动时间</h3>
+                    <p>人人网注册用户均可参加。</p>
+                    <p>活动时间：2014年11月10日00:00-2014年11月30日24:00</p>
+                </div>
+                <div class="item1 pr">
+                    <h3>活动参与方法：</h3>
+                    <p>本次活动以手机端为参与主要平台。</p>
+                    <p class="pr">移动端：使用手机扫描二维码或直接登陆 huaweimaimang.renren.com 进入手机端互动页面，根据提示登录人人，成功后即可参与活动：</p>
+                    <img style="width:6.5rem;" src="images/qr1.gif">
+                    <p>Step1：活动参与入口，系统根据您的UGC大数据为您推送属于您的锋芒海报模板，您可以直接使用，或是自行选择模板。</p>
+                    <p>Step2：上传照片，制作属于您的海报。</p>
+                    <p>Step3：提交海报，并@5位好友，完成参与。</p>
+                    <p>所有用户可以给作品进行投票，每位用户每天给单个作品最多投票5次，不限投票的作品数量。</p>
+                    <p class="pr">电脑端：登陆华为麦芒网站huaweimaimang.renren.com进入活动页面，扫描页面上的二维码参与手机端活动</p>
+                    <img style="width:6.5rem;" src="images/qr1.gif">
+                </div>
+                <div class="item1">
+                    <h3>奖项设置</h3>
+                    <p>给力的奖励，为你的无限锋芒的青春增添光彩！</p>
+                </div>
+                <div class="item1">
+                    <h3>麦芒锋芒奖：华为麦芒C199手机</h3>
+                    <p>活动期间所有参与海报创作的用户均有机会获得，获奖用户将从点赞TOP30用户中产生，评审评选最符合麦芒态度主题的海报3名，每人获得1台华为麦芒C199手机</p>
+                    <p>数量：3名</p>
+                </div>
+                <div class="item1">
+                    <h3>麦芒绽放奖：登上华为麦芒活动头条</h3>
+                    <p>每天将从得票TOP30用户中评选最符合麦芒态度主题的海报1名，登上华为麦芒活动首页，成为头条。绽放您的青春</p>
+                    <p></p>
+                </div>
+                <div class="item1">
+                    <h3>麦芒成长奖：人人礼券</h3>
+                    <p>活动期间所有参与用户（参与海报制作和投票）均有机会获得，获奖者将会在结束后统一随机抽取。</p>
+                    <p>数量：1,000名</p>
+                </div>
+                <div class="item1">
+                    <p>＊	实物奖励：活动结束后，会通过人人网站内信给所有中奖用户进行通知，并请按照流程填写正确的个人资料和邮寄地址，以便我们为您及时送达，活动结束一周内未能回复地址的，视为放弃领奖权利。</p>
+                </div>
+            </div>
+            <div class="rules-item">
+                <h2 class="tit2">【法律声明】</h2>
+                <p>（1）本次活动由华为终端有限公司主办（以下简称为“活动主办方”）。</p>
+                <p>（2）活动参与用户承诺参赛作品内容健康、不涉及任何侵权或非法信息。保证拥有参赛作品版权和其他合法权利。遵守中华人民共和国相关法律法规，不得发表上传反动、色情或侵犯第三方合法权利的等违法信息。</p>
+                <p>（3）活动参与用户同意并授予活动主办方及人人网在全球范围内无偿使用活动参与用户作品用于活动宣传的权利，包括但不限于将作品用于网络媒体、平面媒体、印刷品、 影展、零售店、路演等活动宣传当中，且该授权是不可撤销的、永久有效的并可转授权的，活动主办方及人人网据此使用参与活动的作品时不需要再另行通知活动参与用户或征得活动参与者的同意。</p>
+                <p>（4）每位参加活动的用户理解并同意，为联系获奖用户以及奖品发放的需要，用户须在参与活动之时提供诸如姓名、联系方式、电子邮箱、通讯地址等真实个人信息，活动主办方将仅为前述目的以及适用法律所允许的最大限度内收集和使用用户的个人信息。获奖用户须确保其提供的个人信息完整、准确。</p>
+                <p>（5）由于获奖用户自身原因（包括但不限于活动结束后两周内未能及时填写联系信息或者填写的联系信息不准确、不全面导致主办方无法与之取得联系等）造成奖品无法派送的，将被视作获奖用户自动放弃其领奖权利。活动主办方对此将不承担任何责任，也不再进行补发。</p>
+                <p>（6）活动奖品图片仅供参考，所有奖品均以实物为准，不设退换服务。如遇质量问题，获奖用户请直接与奖品生产商或者指定经销商联系，并按照正常的退换货和维修规则办理，活动主办方不承担责任。</p>
+                <p>（7）如遇意外，无法提供指定奖品的，活动主办方有权以价值相仿的奖品替代，但所有奖品不得兑换现金或作价销售。</p>
+                <p>（8）收到活动主办方派送的奖品后，请获奖用户当场确认奖品是否完好。若发现异常请直接与送件人员提出，若签收后发现奖品损坏，活动主办方将不承担责任。非由活动主办方故意或重大过失造成获奖者在领取和使用奖品过程中所发生的事故，活动主办方无须承担相应负责。</p>
+                <p>（9）本次活动所产生的个人偶然所得税由获奖用户本人承担。</p>
+                <p>（10）活动主办方不对因网络传输原因而导致参与用户提交的信息错误或延误承担任何责任。</p>
+                <p>（11）活动参与用户须妥善保管用以参与活动的人人账号。活动主办方不对因参与用户人人账号被盗或遗失而无法继续参与活动或者无法获取活动奖品而承担任何法律责任。</p>
+                <p>（12）如果发现有参加者在活动中使用任何不正当的手段参加活动，活动主办方有权在不事先通知的前提下取消其参加活动的资格。</p>
+                <p>（13）相关的活动客服电话与客服邮箱均只回答与本次活动相关的问题，如出现故意破坏或者无端骚扰的行为，严重者活动主办方将诉诸法律解决。</p>
+                <p>（14）活动主办方在适用法律所允许的最大限度内对本次活动拥有解释权。如遇不可抗力因素，活动主办方拥有终止或取消本次活动的权利。</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/merge.js"></script>
+#parse("/template/comm.html")
+        <!--等待弹窗-->
+        <div class="rrPopup rrp4" id="pwaiting">
+            <img class="loading1" src="images/load.gif">
+            <p>Loading……</p>
+        </div>
+</body>
+</html>

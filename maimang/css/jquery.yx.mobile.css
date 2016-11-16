@@ -1,0 +1,82 @@
+p.appalert{ background: rgba(0,0,0,0.8); color: #fff; line-height: 3rem; font-size: 1.6rem; position: fixed; z-index: 99; left: 50%; top: 50%; height: 3rem; width: 70%; margin-left: -35%; text-align: center; margin-top: -1.5rem; border-radius: .5rem;}
+
+.albumsbox{ font-size: 12px; line-height: 20px;font-family:"宋体","5FAE\8F6F\96C5\9ED1","微软雅黑"; position: fixed; z-index: 99; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; background: #fff;}
+.albumsbox .albumsboxlist{ width: 100%;background:#fff;z-index: 1; overflow: hidden; position: relative; margin: 5px 0;}
+.albumsbox ul.boxtopnav{ height: 40px; line-height: 40px; font-size: 12px; width: 100%;}
+.albumsbox ul.boxtopnav li{ width: 32%; border-right: 1px solid #fff; float: left; height: 40px; text-align: center; background: #eee;}
+.albumsbox ul.boxtopnav li:last-child{ border: none; }
+.albumsbox ul.boxtopnav li.ed{ background: #72bbff; color: #fff;}
+.albumsbox ul.boxbotnav{ height: 40px; line-height: 40px; font-size: 12px; width: 102%;}
+.albumsbox ul.boxbotnav li{ width: 49.6%; border-right: 1px solid #fff; float: left; height: 40px; text-align: center; background: #eee;}
+.albumsbox ul.boxbotnav li:last-child{ border: none; }
+.albumsbox ul.boxbotnav li.ed{ background: #72bbff; color: #fff;}
+.albumsbox .albumsboxlist .albumslist{  text-align: center; width: 100%; overflow-y: scroll; position: absolute; left: 0; top: 0; background: #fff;}
+.albumsbox .albumsboxlist .albumslist .box{ margin: 0 auto;}
+.albumsbox .albumsboxlist .albumslist p{ float: left; width: 130px; height: 80px; overflow: hidden; margin: 5px; border: 1px solid #eee; position: relative;}
+.albumsbox .albumsboxlist .albumslist p img{ width: 120px;margin: 0 auto 0; display: block; line-height: 0; font-size: 0; position: relative;}
+.albumsbox .albumsboxlist .albumslist p img[src$="load.gif"]{ height: 32px; width: 32px; margin-top: 45px;}
+.albumsbox .albumsboxlist .albumslist p img.top{ position: absolute; left: 0; top: -11px; width: auto;}
+.albumsbox .albumsboxlist .albumslist p.alb{ background:#fafafa; border: 1px solid #eee;}
+.albumsbox .albumsboxlist .albumslist p.alb span.img{display: block; height: 70px; padding: 5px 0 0; overflow: hidden;}
+.albumsbox .albumsboxlist .albumslist p.alb span.nums{ display: block; position: absolute; height: 16px; line-height: 16px; font-size: 12px; width: 120px; left: 5px; top: auto; bottom: 5px; background: rgba(0,0,0,0.5); color: #fff;}
+.albumsbox .albumsboxlist .albumslist p.pic{ height: 90px; width: 90px; overflow: hidden; position: relative;}
+.albumsbox .albumsboxlist .albumslist p.pic span.img{ display: block; height: 80px; width: 80px; overflow: hidden; margin: 5px auto 0;}
+.albumsbox .albumsboxlist .albumslist p.pic img{ width: 80px;}
+.albumsbox .albumsboxlist .albumslist p.pic img[src$="load.gif"]{ height: 32px; width: 32px; margin-top: 40px;}
+.albumsbox .albumsboxlist .albumslist p.piced{ background:#72BBFF;}
+.albumsbox .albumsboxlist .albumslist p.sed{height: 90px; width: 90px; border:1px solid #ff3737;}
+.albumsbox .albumsboxlist .albumslist p.sed span.img{ display: block; height: 80px; width: 80px; overflow: hidden; margin: 5px auto 0;}
+.albumsbox .albumsboxlist .albumslist p.sed img{ width: 80px;}
+#albumcover{ position: fixed; z-index: 100; left: 0; top: 0; height: 100%; width: 100%; background:rgba(0,0,0,0.5);}
+#albumcover img{ position: absolute; left: 50%; top: 50%; margin: -16px 0 0 -16px;}
+
+.wap_friends{ font-size: 12px; line-height: 20px;font-family:"宋体","5FAE\8F6F\96C5\9ED1","微软雅黑"; position: fixed; z-index: 99; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden;}
+.wap_friends input{border: none; margin: 0; padding: 0; border-radius: 0; font-size: 12px;}
+.wap_friends .wap_pathnav{ height: 40px; line-height: 40px; font-size: 14px; overflow: hidden; background: #72bbff; color: #fff;}
+.wap_friends .wap_pathnav p.te{color: #fff; font-weight: bold; padding: 0 0 0 10px;}
+.wap_friends .wap_pathnav p.te span{ padding:0 0 0 5px; color: #ddd;}
+.wap_friends .wap_pathnav p.search{ float: right; width: 145px; position: relative; height: 40px;}
+.wap_friends .wap_pathnav p.search .mybtn{display: block; position: absolute; right: 0; top: 0; width: 40px; height: 40px; line-height: 40px;  background: #1861b1; color: #fff; text-align: center; font-size: 14px;}
+.wap_friends .wap_pathnav p.search input.text{ display: block; position: absolute; left: 0; top: 8px; width: 100px; height: 24px; line-height: 24px; text-indent: 5px;  background: #fff; color: #333; border-radius: 4px;}
+.wap_friends .wap_pathnav p.search span{ display: none; position: absolute; right: 3px; top: 3px; line-height: 18px; color: #999;}
+.wap_friends .fmess{ height: 40px; line-height: 40px; font-size: 12px; width: 102%; border-bottom: 1px solid #fff;}
+.wap_friends .fmess p{ width: 49.6%; border-right: 1px solid #fff; float: left; height: 40px; text-align: center; background: #eee;}
+.wap_friends .fmess p:last-child{ border: none; }
+.wap_friends .fmess p.ed{ background:#72bbff; color: #fff;}
+.wap_friends .frList{background: #fff; overflow-y: scroll; position: relative;}
+.wap_friends .frList ul{ margin: 0 auto;}
+.wap_friends .frList ul.picedlist{ width: 100%; position: fixed; left: 0; bottom: 0; overflow-y: scroll; background: #fff; z-index: 5;}
+.wap_friends .frList ul li{ float: left; margin: 5px; border: 1px solid #eee; height: 60px; width: 60px; overflow: hidden; position: relative;}
+.wap_friends .frList ul li p.img{ height: 50px; padding: 5px 0; overflow: hidden; text-align: center;}
+.wap_friends .frList ul li p.img img{ width: 50px; height: 50px; display: block; line-height: 0; margin: 0 auto;}
+.wap_friends .frList ul li p.name{ position: absolute; z-index: 1; bottom: 5px; left: 5px; width: 50px; line-height: 16px; font-size: 12px; height: 16px;text-align: center; overflow: hidden; text-overflow:ellipsis; white-space:nowrap; background: rgba(0,0,0,0.5); color: #fff;}
+.wap_friends .frList ul li.piced{ background: #72bbff; color: #fff;}
+.wap_friends .frList ul.picedlist li.piced{ background: #fff; border: 1px solid #ff3737;}
+#fricover{ position: fixed; z-index: 100; left: 0; top: 0; height: 100%; width: 100%; background:rgba(0,0,0,0.5);}
+#fricover img{ position: absolute; left: 50%; top: 50%; margin: -16px 0 0 -16px;}
+
+/*.wap_pfriends{ font-size: 12px; line-height: 20px;font-family:"宋体","5FAE\8F6F\96C5\9ED1","微软雅黑"; position: fixed; z-index: 99; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden;}
+.wap_pfriends input{border: none; margin: 0 auto; padding: 0; border-radius: 0; font-size: 12px;}
+.wap_pfriends .wap_pathnav{ height: 24px; padding: 8px 0; overflow: hidden; background: #3777bc; color: #fff;}
+.wap_pfriends .wap_pathnav input.text{ display: block; width: 90%; height: 24px; line-height: 24px; text-indent: 5px;  background: #fff; color: #333; border-radius: 4px;}
+.wap_pfriends .fmess{ height: 40px; line-height: 40px; font-size: 12px; width: 102%; border-bottom: 1px solid #aaa;}
+.wap_pfriends .fmess p{ width: 49.6%; border-right: 1px solid #aaa; float: left; height: 40px; text-align: center; background: #eee;}
+.wap_pfriends .fmess p:last-child{ border: none; }
+.wap_pfriends .fmess p.ed{ background: #2e7; color: #fff;}
+.wap_pfriends .frList{background: #fff; overflow-y: scroll; position: relative;}
+.wap_pfriends .frList ul.picedlist{ width: 100%; position: fixed; left: 0; bottom: 0; overflow-y: scroll; background: #fff; z-index: 5;}
+.wap_pfriends .frList ul li{ border-bottom: 1px solid #eee; height: 40px; overflow: hidden; position: relative;}
+.wap_pfriends .frList ul li p.name{line-height: 40px; font-size: 12px; height: 40px;overflow: hidden; text-overflow:ellipsis; white-space:nowrap;color: #222; padding: 0 0 0 30px;}
+.wap_pfriends .frList ul.piclist li p.po{ display: block; height: 40px; width: 30px; background: url(../images/uneda.png) no-repeat center;  position: absolute; z-index: 2; left: 0; top: 0;}
+.wap_pfriends .frList ul.piclist li.piced p.po{ display: block;background: url(../images/eda.png) no-repeat center;}
+.wap_pfriends .frList ul.picedlist li p.po{ height: 40px; width: 30px; background: url(../images/deletea.png) no-repeat center;  position: absolute; z-index: 2; left: 0; top: 0;}
+*/
+.wapphoto{ font-size: 12px; line-height: 20px;font-family:"宋体","5FAE\8F6F\96C5\9ED1","微软雅黑"; position: fixed; z-index: 99; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; background: #fff;}
+.wapphoto ul{ height: 40px; line-height: 40px; font-size: 12px; width: 102%; border-top: 1px solid #fff; position: absolute; bottom: 0; left: 0;}
+.wapphoto ul li{ width: 33.2%; border-right: 1px solid #fff; float: left; height: 40px; text-align: center; background: #eee;}
+.wapphoto ul li:last-child{ border: none; }
+.wapphoto ul li.done{ background: #72bbff; color: #fff;}
+.wapphoto .photo{ overflow-y:scroll; }
+.wapphoto .photo canvas{ display: block; margin: 0 auto;}
+#phonecover{ position: fixed; z-index: 100; left: 0; top: 0; height: 100%; width: 100%; background:rgba(0,0,0,0.5);}
+#phonecover img{ position: absolute; left: 50%; top: 50%; margin: -16px 0 0 -16px;}

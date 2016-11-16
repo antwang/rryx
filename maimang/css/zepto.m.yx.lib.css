@@ -1,0 +1,559 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+    position:relative;
+	font-family:microsoft yahei;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select:none;
+    -webkit-user-modify:read-only;
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+}
+a{ text-decoration:none;}
+.vm{vertical-align:middle;}
+/**提示框**/
+.pop-tips{
+    position: fixed; 
+    left:50%; 
+    top:30%;
+    width:24rem; 
+    padding:1rem;
+    border-radius:.3rem; 
+    margin-left:-12rem;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:1.4rem;
+    color:#fff;
+    text-align:center;
+    line-height:1.5;
+    background:rgba(0,0,0,.8); 
+    z-index: 10000; 
+}
+.login{
+	height: 100%; 
+	width: 100%;
+	font-family:microsoft yahei;
+	background: #fff;
+}
+/**登录标题**/
+.top-bar{
+    height:4rem;
+    line-height:4rem; 
+    font-size:1rem;
+    background:#1ebaf3;
+}
+.login .top-bar .btn-cancel{
+    position:absolute;
+    top:0;
+    left:1rem;
+    height:4rem;
+	padding-right:1rem;
+    font-size:2rem;
+    color:#fff;
+    overflow:hidden;
+}
+.login .top-bar .title{
+    color:#fff;
+    font-size:1.8rem;
+    text-align:center;
+}
+.login .form{
+    padding: 0.5em 1rem;
+}
+/**错误提示信息**/
+.error-area {
+    min-height:1.4rem;
+    line-height:1.4rem;
+    font-size:1.4rem;
+}
+.mod-error{
+    padding:.5rem 2rem;
+    background: url(http://m.yx.renren.com/2261/yxlib/images/err-icon.png) no-repeat left center;
+    background-size: 1.4rem 1.4rem;
+    color: #f7461c;
+}
+.form-item-username {
+    position: relative;
+}
+.form-input-wrapper2{
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    border: .1rem solid #ccc;
+    border-radius: .2rem;
+    height: 4rem;
+    padding: 0 1rem;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.form-input-wrapper1{
+    border: .1rem solid #ccc;
+    height: 4rem;
+    padding: 0 1rem;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.item{
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    width: 100%;
+	border-radius: .2rem;
+    margin-bottom: 1rem;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing: border-box;
+}
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="tel"], textarea {
+    display: block;
+    border: none;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
+    height: 2rem;
+    padding:1rem 0;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    background:none;
+}
+.text-label{
+    display: block;
+    padding-left: 2.8rem;
+}
+.text-label-email{
+    background: url(http://m.yx.renren.com/2261/yxlib/images/label-user.png) no-repeat left center;
+    background-size: 1.8rem 1.9rem;
+}
+.label-email-focus{
+    background: url(http://m.yx.renren.com/2261/yxlib/images/label-user-focus.png) no-repeat left center;
+    background-size: 1.8rem 1.9rem;
+}
+.input-clearValue {
+    display: none;
+    width: 2rem;
+    background: url(http://m.yx.renren.com/2261/yxlib/images/clear.png) no-repeat center center;
+    background-size: 1.5rem 1.5rem;
+    cursor: pointer;
+}
+.text-label-password{
+    background: url(http://m.yx.renren.com/2261/yxlib/images/label-pw.png) no-repeat left center;
+    background-size: 1.8rem 1.9rem;
+}
+.label-password-focus{
+    background: url(http://m.yx.renren.com/2261/yxlib/images/label-pw-focus.png) no-repeat left center;
+    background-size: 1.8rem 1.9rem;
+}
+/**验证码**/
+.verify-hidden{
+    display:none;
+}
+.change-verifyCode {
+    display: block;
+    width: 2.5rem;
+    height: 4rem;
+    text-indent:-9999px;
+    background: url(http://m.yx.renren.com/2261/yxlib/images/refresh-icon.png) no-repeat 0 center;
+    background-size: 2.5rem 2.2rem;
+}
+.verifyCode-img {
+    display: block;
+    margin: 0 1rem;
+    box-sizing: border-box;
+    border: .1rem solid #ccc;
+    border-radius: .2rem;
+}
+
+input[type="submit"], input[type="button"] {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.input-submit{
+    display: block;
+    width: 100%;
+    line-height: 4.4rem;
+    border: .1rem solid #3f89ec;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    border-radius: .2rem;
+    background: #227dc5;
+}
+.form .item-3{ font-size: 1.4rem;}
+
+/**好友选择器样式**/
+.friends-pop{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+	overflow-y:auto;
+    -wekit-overflow-scrolling:touch;
+    background:#fff;
+    z-index:9999;
+}
+.friends-pop .top-bar{
+    height:4rem;
+    line-height:4rem; 
+    font-size:1.6rem;
+    color:#fff;
+    background: #227dc5;
+    background:#1ebaf3;
+}
+.friends-pop .top-bar .btn-cancel{
+    position:absolute;
+    top:0;
+    left:1rem;
+    height:4rem;
+	padding-right:1rem;
+    font-size:2rem;
+    color:#fff;
+    overflow:hidden;
+}
+.icon-label{
+    font-size:0;
+}
+.top-bar .btn-topbar-r{
+    position:absolute;
+    top:0;
+    right:0;
+    height:4rem;
+    padding:0 1rem;
+    font-size:1.2rem;
+    color:#fff;
+    overflow:hidden;
+    background:#006fc7;
+}
+.top-bar .btn-topbar-r:hover {
+    background:#0065b4;
+}
+.top-bar .btn-topbar-r em { font-size:1rem; }
+.search-bar{
+    padding:0 1rem;
+    margin-top:1rem;
+}
+.search-box{
+    display:-webkit-box;
+    display:-moz-box;
+    display:box;
+    height:3rem;
+    padding:0 .5rem;
+    line-height:3rem;
+    border:.1rem solid #ccc;
+    -webkit-box-align:center;
+    border-radius:.2rem;
+}
+.search-box .search-text{
+    display:block;
+    -webkit-box-flex:1;
+    height:2rem;
+    border:0;
+    font-size:1.4rem;
+}
+.search-box .btn-fri-search{
+    display:block;
+    height:100%;
+    margin-left:.5rem;
+    padding:0 .5rem;
+    line-height:3rem;
+    font-size:1.6rem;
+    color:#aaa;
+}
+.search-box .btn-fri-search:hover {
+    color:#227dc5;
+}
+.flist-box{
+    margin-top:1rem;
+    padding:0 .5rem;
+}
+.ul-flist{
+	padding-left:.4rem;
+}
+.ul-flist li{
+    float:left;
+    width:6.4rem;
+    padding:.3rem;
+    border:.1rem solid #ccc;
+    margin:0 .2rem .5rem 0;
+    border-radius:.2rem;
+	box-shadow:1px 1px 2px rgba(0,0,0,.2);
+}
+.ul-flist li .fri-img-box{
+    position:relative;
+    width:6.4rem;
+    height:6.4rem;
+}
+.ul-flist li .fri-img-box .fri-img{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.ul-flist li .fri-img-box em{
+    position:absolute;
+    top:0.2rem;
+    right:0.2rem;
+	width:2rem;
+	height:2rem;
+	border-radius:2rem;
+    font-size:2rem;
+	color:#aaa;
+    z-index:1;
+	background:#fff;
+}
+.ul-flist li.fri-selected{
+	background: #227dc5;
+	color:#fff;
+	border:.1rem solid #227dc5;
+}
+.ul-flist li.fri-selected .fri-img-box em{
+	color:#227dc5;
+}
+.ul-flist li .fri-name{
+    width:100%;
+    font-size:1.4rem;
+    line-height:2rem;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.loading-bar{
+	padding:1rem 0;;
+}
+.loading-bar a.btn-nextpage:link{	
+	display:block;
+	width:90%;
+	height:3rem;
+	border:1px solid rgb(220,220,220);
+	margin:0 auto;
+	border-radius:2px;
+	box-shadow:0 0 3px rgba(0,0,0,.1);
+	line-height:3rem;
+	text-align:center;
+	color:#000;
+	font-size:1.4rem;
+	background:rgb(240,240,240);
+}
+
+.loading-bar a.btn-nextpage:hover {	
+	background:rgb(230,230,230);
+}
+/****调取人人相册*****/
+
+.album-popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+	background:#fff;
+}
+.album-popup .album-wraper{
+    width:300%;
+    height:100%;
+    -webkit-transform:translateX(0);
+}
+.album-popup .album-wraper .album-item{
+    position:relative;
+    float:left;
+    width:33.33%;
+    height:100%;
+    padding-top:4rem;
+    box-sizing:border-box;
+}
+.album-popup .album-wraper .album-item .top-bar{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4rem;
+    line-height:4rem; 
+    font-size:1.6rem;
+    color:#fff;
+    background: #227dc5;
+    background:#1ebaf3;
+}
+.album-popup .album-wraper .album-item .top-bar .title{
+    font-size:1.8rem;
+    text-align:center;
+}
+.album-popup .album-wraper .album-item .top-bar .btn-cancel{
+    position:absolute;
+    top:50%;
+    margin-top:-1rem;
+    right:1rem;
+    height:2rem;
+    line-height:2rem;
+    font-size:1.6rem;
+    color:#fff;
+}
+.album-popup .album-wraper .album-item .top-bar .btn-cancel:hover{
+    color:#d9eeff;
+}
+.album-item .albumlist-box ul li{
+    width:100%;
+    height:5rem;
+    border-bottom:1px solid #c6c6c6;
+    overflow:hidden;
+    color:#000;
+    font-size:1.6rem;
+    cursor:pointer;
+    background:url(../images/album/arrowRight.gif) no-repeat 95% center;
+    background-size:.6rem 1.35rem;
+}
+.album-item .albumlist-box ul li .album-cover{
+    vertical-align:middle;
+    width:5rem;
+    height:5rem;
+    margin-right:1rem;
+}
+
+.album-popup .album-wraper .album-item .top-bar .btn-back{
+    position:absolute;
+    top:0;
+    left:.5rem;
+    height:4rem;
+    line-height:4rem;
+	padding-right:1rem;
+    font-size:2rem;
+    color:#fff;
+    overflow:hidden;
+}
+.album-popup .album-wraper .album-item .top-bar .btn-back:hover{
+    color:#d9eeff;
+}
+.album-popup .album-wraper .album-item .top-bar .btn-back .mls{
+    font-size:1.6rem;
+}
+.album-item .photolist-box{
+    width:100%;
+    height:100%;
+    overflow:auto;
+}
+.album-item .photolist-box ul{
+    padding-bottom:5rem;
+}
+.album-item .photolist-box ul li{
+    float:left;
+    position:relative;
+    width:10rem;
+    height:10rem;
+    margin:.5rem 0 0 .5rem;
+    overflow:hidden;
+    cursor:pointer;
+}
+.album-item .photolist-box ul li img{
+    display:block;
+    width:10rem;
+    height:10rem;
+}
+.album-item .photolist-box ul li .mask{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.5);
+}
+.album-item .photolist-box ul li.active .mask{
+    display:block;
+}
+.album-item .photolist-box ul li .mask .icon-check{
+    position:absolute;
+    top:.5rem;
+    right:.5rem;
+    width:2rem;
+    height:2rem;
+    border-radius:2rem;
+    border:.1rem solid #fff;
+    box-sizing:border-box;
+    font-size:1.2rem;
+    text-align:center;
+    color:#fff;
+    line-height:2rem;
+    background:#18b4ed;
+}
+.bottom-bar{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:5rem;
+    border-top:1px solid #c7c7c7;
+    background:#f3f3f3;
+}
+.bottom-bar .disable{
+    border:none!important;
+    color:#ccc!important;
+    background:#e9ebec!important;
+}
+.bottom-bar .btn-confirm{
+    position:absolute;
+    top:1rem;
+    right:1rem;
+    width:10rem;
+    height:3rem;
+    line-height:3rem;
+    border-radius:.3rem;
+    text-align:center;
+    color:#fff;
+    font-size:1.4rem;
+    border:1px solid #0fabe4;
+    background:#1ebaf3;
+}
+.bottom-bar .btn-selected{
+    position:absolute;
+    top:1rem;
+    left:1rem;
+    width:10rem;
+    height:3rem;
+    line-height:3rem;
+    font-size:1.4rem;
+    text-align:center;
+    color:#1ebaf3;
+    border:1px solid #cacccd;
+    border-radius:.3rem;
+    background:#fff;
+}
+.bottom-bar .btn-selected:hover{
+    background:#f3f3f3;
+}
+.bottom-bar .btn-confirm:hover{
+    background:#0fabe4;
+}
+/**不同屏幕设备字体等比例自适应**/
+@media screen and (min-width: 160px) {html{font-size:31.25%;}}   
+@media screen and (min-width: 200px) {html{font-size:39.0625%;}}   
+@media screen and (min-width: 240px) {html{font-size:46.875%;}}   
+@media screen and (min-width: 280px) {html{font-size:54.6875%;}}   
+@media screen and (min-width: 320px) {html{font-size:62.5%;}}       
+@media screen and (min-width: 360px) {html{font-size:70.3125%;}}      
+@media screen and (min-width: 400px) {html{font-size:78.125%;}} 
+@media screen and (min-width: 440px) {html{font-size:85.9375%;}} 
+@media screen and (min-width: 480px) {html{font-size:93.75%;}} 
+@media screen and (min-width: 520px) {html{font-size:101.5625%;}}
+@media screen and (min-width: 560px) {html{font-size:109.375%;}} 
+@media screen and (min-width: 600px) {html{font-size:117.1875%;}}  
+@media screen and (min-width: 640px) {html{font-size:125%;}} 
+@media screen and (min-width: 680px) {html{font-size:132.8125%;}}
+@media screen and (min-width: 720px) {html{font-size:140.625%;}}
+@media screen and (min-width: 760px) {html{font-size:148.4375%;}}
+@media screen and (min-width: 800px) {html{font-size:156.25%;}}
+/**不同屏幕设备字体等比例自适应 end**/

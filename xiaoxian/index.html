@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset = "utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta property="og:title" content="" />
+<meta property="og:type" content="book" />
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content="" />
+<meta property="og:description" content="" />
+<title>争“鲜”恐后</title>
+<link href="http://yx.xnimg.cn/base/component/app/jquery.yx.mobile.2.0.css" rel="stylesheet" type="text/css" />
+<link href="http://yx.xnimg.cn/minisite/common/style/m_reset.css" rel="stylesheet" type="text/css">
+<link href="http://yx.xnimg.cn/minisite/common/style/base.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script type="text/javascript" src="http://yx.xnimg.cn/minisite/common/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://yx.xnimg.cn/base/component/app/jquery.yx.mobile.source.2.0.js"></script>
+<script type="text/javascript" src="http://yx.xnimg.cn/minisite/common/js/jquery.yx.popup.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+jQuery(function(){	
+	jQuery(".btn_draw").click(function(){
+		jQuery.post("../draw",{},function(json){
+			var desc;
+			if(json.status == 1){
+				if(json.prizeid > 0){
+					desc = "恭喜你获得"+ json.prizename +"！";					
+				}else{
+					desc = "抱歉，这次没抽到奖品哦！";
+				}				
+			}else{
+				desc = json.desc;
+			}			
+			jQuery("#prize_desc").text(desc);
+			jQuery('#p2').showPop();
+		},"json");
+	});
+});
+</script>
+</head>
+<body>
+    <!--首页加载中-->
+    <div class="loading" id="loading" style="/*display:none*/">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+        <div class="percent">- 0% -</div>
+    </div>
+    <!--首页加载中-->
+    <div class="wrapper">
+        <header>
+            <div class="topbar vhide"><img src="images/pics/logo.gif"></div>
+        </header>
+        <div class="main">
+            <a class="menu vhide" href="javascript:" title="导航"><img src="images/btns/menu.png"></a>
+            <div class="page page0 hide">
+                <div class="sl1 vhide"><img src="images/texts/sl1.png"></div>
+                <div class="pop1 vhide"><img src="images/texts/pop1.png"></div>
+                <div class="plane vhide"><img src="images/pics/plane.png"></div>
+                <div class="girl vhide"><img src="images/pics/girl.png"></div>
+                <a class="btn_test vhide" href="javascript:"><img src="images/btns/btn_test.png"></a>
+                <a class="btn_draw btn_drawGift vhide" href="javascript:"><img src="images/btns/btn_draw.png"></a>
+            </div>
+            <!--测试-->
+            <div class="page page1 hide">
+                <div class="sl2 vhide"><img src="images/texts/sl2.gif"></div>
+                <!--测试第一步：选图片-->
+                <div class="page1_1 hide">
+                    <div class="tip1 vhide"><img src="images/texts/tip1.gif"></div>
+                    <div class="userBox userBox1 vhide">
+                        <div class="pic_box">
+                            <img src="images/pics/pic1.jpg">
+                        </div>
+                        <p class="user_name">李易峰</p>
+                    </div>
+                    <a class="btn_album vhide" href="javascript:"><img src="images/btns/btn_album.png"></a>
+                    <a class="btn_start vhide" href="javascript:"><img src="images/btns/btn_start.png"></a>
+                </div>
+                <!--测试第二步：扫描中-->
+                <div class="page1_2 hide">
+                    <div class="tip2 vhide"><img src="images/texts/tip2.gif"></div>
+                    <div class="userBox userBox2 vhide">
+                        <div class="pic_box">
+                            <img src="images/pics/pic1.jpg">
+                            <span class="scan"></span>
+                        </div>
+                        <p class="user_name">李易峰</p>
+                    </div>
+                </div>
+                <!--测试第三步：得出结论-->
+                <div class="page1_3 hide">
+                    <div class="tip3 vhide"><img src="images/texts/tip3.gif"></div>
+                    <div class="youngIndex vhide"><span id="runNum">10</span>%</div>
+                    <div class="userBox userBox3 vhide">
+                        <div class="pic_box">
+                            <img src="images/pics/pic1.jpg">
+                        </div>
+                        <p class="user_name">李易峰</p>
+                    </div>
+                    <div class="sl3 vhide"><img src="images/texts/sl3.gif"></div>
+                    <a marker="1_3" class="btn_makeFresh btn_fresh vhide" href="javascript:"><img src="images/btns/btn_fresh.png"></a>
+                </div>
+                <!--测试第四步：选择争先方式-->
+                <div class="page1_4 hide">
+                    <div class="tip4 vhide"><img src="images/texts/tip4.gif"></div>
+                    <div class="orange vhide"><img src="images/pics/orange.gif"></div>
+                    <a class="btn_method btn_method1 vhide" href="javascript:"><img src="images/btns/btn_method1.png"></a>
+                    <a class="btn_method btn_method2 vhide" href="javascript:"><img src="images/btns/btn_method2.png"></a>
+                    <a class="btn_method btn_method3 vhide" href="javascript:"><img src="images/btns/btn_method3.png"></a>
+                    <a class="btn_method btn_method4 vhide" href="javascript:"><img src="images/btns/btn_method4.png"></a>
+                </div>
+            </div>
+            <!--大力出奇迹-->
+            <div class="page page2 hide">
+                <div class="method_title1 vhide"><img src="images/texts/method_title1.gif"></div>
+                <!--大力提示-->
+                <div class="page2_1 hide">
+                    <div class="method_tip1 vhide"><img src="images/texts/method_tip1.gif"></div>
+                    <div class="shakeTip vhide"><img src="images/pics/shake.png"></div>
+                </div>
+                <!--大力结果-->
+                <div class="page2_2 hide">
+                    <div class="resBox resBox1 vhide">
+                        <div class="msg1"><img src="images/texts/msg1_1.gif"></div>
+                        <div class="youngIndex1"><span id="runNum1">10</span>%</div>
+                    </div>
+                    <div class="tip5 vhide"><img src="images/texts/tip5.gif"></div>
+                    <a marker="2_2" class="btn_makeFresh btn_style1 btn_fresh2 vhide" href="javascript:"><img src="images/btns/btn_fresh2.png"></a>
+                    <a marker="2_2" class="btn_style1 btn_share vhide" href="javascript:"><img src="images/btns/btn_share.png"></a>
+                </div>
+            </div>
+            <!--一白遮百丑-->
+            <div class="page page3 hide">
+                <div class="method_title2 vhide"><img src="images/texts/method_title2.gif"></div>
+                <!--涂抹屏幕-->
+                <div class="page3_1 hide">
+                    <div class="method_tip2 vhide"><img src="images/texts/method_tip2.gif"></div>
+                    <div class="userBox userBox4 vhide">
+                        <div class="canvas_box">
+                            <canvas id="drawCanvas"></canvas>
+                        </div>
+                        <p class="user_name">李易峰</p>
+                    </div>
+                    <a class="btn_style1 btn_done vhide" href="javascript:"><img src="images/btns/btn_done.png"></a>
+                </div>
+                <!--涂抹结果-->
+                <div class="page3_2 hide">
+                    <div class="resBox resBox2 vhide">
+                        <div class="msg2"><img src="images/texts/msg2_1.gif"></div>
+                        <div class="youngIndex2"><span id="runNum2">0</span>%</div>
+                    </div>
+                    <div class="tip5 vhide"><img src="images/texts/tip5.gif"></div>
+                    <a marker="3_2" class="btn_makeFresh btn_style1 btn_fresh2 vhide" href="javascript:"><img src="images/btns/btn_fresh2.png"></a>
+                    <a marker="3_2" class="btn_style1 btn_share vhide" href="javascript:"><img src="images/btns/btn_share.png"></a>
+                </div>
+            </div>
+            <!--邀请好友猛夸我-->
+            <div class="page page4 hide">
+                <div class="method_title3 vhide"><img src="images/texts/method_title3.gif"></div>
+                <!--邀请好友-->
+                <div class="page4_1 hide">
+                    <div class="method_tip3 vhide"><img src="images/texts/method_tip3.gif"></div>
+                    <label class="synToStatus vhide"><input type="checkbox" checked>同步到人人网状态</label>
+                    <a class="btn_style1 btn_invite vhide" href="javascript:"><img src="images/btns/btn_invite.png"></a>
+                    <div class="tip6 vhide"><img src="images/texts/tip6.gif"></div>
+                </div>
+                <!--邀请结果-->
+                <div class="page4_2 hide">
+                    <div class="resBox resBox3 vhide">
+                        <div class="msg3"><img src="images/texts/msg3_1.gif"></div>
+                        <div class="youngIndex3"><span id="runNum3">0</span>%</div>
+                    </div>
+                    <div class="tip5 vhide"><img src="images/texts/tip5.gif"></div>
+                    <a marker="4_2" class="btn_makeFresh btn_style1 btn_fresh2 vhide" href="javascript:"><img src="images/btns/btn_fresh2.png"></a>
+                    <a marker="4_2" class="btn_style1 btn_share vhide" href="javascript:"><img src="images/btns/btn_share.png"></a>
+                </div>
+            </div>
+            <!--独门绝技-->
+            <div class="page page5 hide">
+                <div class="method_title4 vhide"><img src="images/texts/method_title4.gif"></div>
+                <!--独门变变-->
+                <div class="page5_1 hide">
+                    <div class="method_tip4 vhide"><img src="images/texts/method_tip4.gif"></div>
+                    <div class="userBox userBox5 vhide">
+                        <div class="pic_box">
+                            <img src="images/pics/pic1.jpg">
+                        </div>
+                    </div>
+                    <a class="btn_style1 btn_bian vhide" href="javascript:"><img src="images/btns/btn_bian.png"></a>
+                </div>
+                <!--变变结果-->
+                <div class="page5_2 hide">
+                    <div class="resBox resBox4 vhide">
+                        <div class="msg4"><img src="images/texts/msg4_1.png"></div>
+                    </div>
+                    <div class="finalRes vhide">
+                        <div class="pic_box1"><img src="images/pics/pic1.jpg"></div>
+                        <div class="youngIndex4 vhide">
+                            <img src="images/pics/finalIndexBg.png">
+                            <p class="youngIndexText">鲜嫩指数<br><span id="runNum4">0</span>%</p>
+                        </div>
+                        <div class="phone vhide"><img src="images/pics/phone.png"></div>
+                        <label class="synToAlbum vhide"><input type="checkbox" checked>同步到人人相册</label>
+                    </div>
+                    <a marker="5_2" class="btn_style1 btn_share vhide" href="javascript:"><img src="images/btns/btn_share.png"></a>
+                </div>
+            </div>
+            <!--分享成功-->
+            <div class="page pageShare hide">
+                <div class="sl2 vhide"><img src="images/texts/sl2.gif"></div>
+                <div class="shareBox vhide">
+                    <div class="share_tip"><img src="images/texts/share_tip.gif"></div>
+                    <div class="orange_num">X<span id="orangeCnt">3</span></div>
+                </div>
+                <div class="tip7 vhide"><img src="images/texts/tip7.gif"></div>
+                <a marker="Share" class="btn_makeFresh btn_style1 btn_fresh2 vhide" href="javascript:"><img src="images/btns/btn_fresh2.png"></a>
+                <a class="btn_style1 btn_draw1 btn_drawGift vhide" href="javascript:"><img src="images/btns/btn_draw1.png"></a>
+            </div>
+        </div>
+        <footer>
+            <div class="bottombar vhide"><img src="images/pics/footer.gif"></div>
+        </footer>
+    </div>
+    <!--common-导航弹窗-->
+    <div id="p1" class="rrPopup">
+        <nav class="nav">
+            <a class="nav_item nav_item1 active" href="index.html"><img src="images/btns/nav_item1.gif"></a> 
+            <a class="nav_item nav_item2" href="rules.html"><img src="images/btns/nav_item2.gif"></a> 
+            <a class="nav_item nav_item3" href="game.html"><img src="images/btns/nav_item3.gif"></a> 
+            <a class="nav_item nav_item4" href="#"><img src="images/btns/nav_item4.gif"></a> 
+            <a class="nav_item nav_item5" href="#"><img src="images/btns/nav_item5.gif"></a> 
+        </nav>
+    </div>
+    <!--common-抽奖弹窗-->
+    <div id="p2" class="rrPopup">
+        <a class="btn_close btn_close1" href="javascript:"><img src="images/btns/btn_close.png"></a>
+        <div class="popbg">
+            <img src="images/pics/popbg.png">
+            <p class="gift_tip">小鲜手机带给你绝对的幸运！<br><span id="prize_desc"></span></p>
+            <div class="btn_tools">
+                <a class="btn_style2 btn_fresh2" href="javascript:"><img src="images/btns/btn_fresh2.png"></a>
+                <a class="btn_style2 btn_share1" href="javascript:"><img src="images/btns/btn_share1.png"></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/Draw.js"></script>
+    <script type="text/javascript" src="js/Game.js"></script>
+    <script type="text/javascript">
+       var t = new Game();
+    </script>
+#parse("/template/comm.html")
+</body>
+</html>
